@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jogo da Memória - Descubra e Aprenda Métodos, Objetos e Classes em Java</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 class="title">Jogo da Memória</h1>
+<h2 class="subtitle">Descubra e Aprenda Métodos, Objetos e Classes em Java</h2>
+
+<div class="scoreboard">
+    <div class="player" id="player1">
+        <span>Jogador 1</span>
+        <span>Pontuação: <span id="score1">0</span></span>
+    </div>
+    <div class="player" id="player2">
+        <span>Jogador 2</span>
+        <span>Pontuação: <span id="score2">0</span></span>
+    </div>
+</div>
+
+<div class="memory-game">
+    <!-- Cartas aqui -->
+    <div class="memory-card" data-framework="classe">
+        <div class="front-face">Classe</div>
+        <div class="back-face"></div>
+    </div>
+    <div class="memory-card" data-framework="classe">
+        <div class="front-face">É um modelo para criar objetos</div>
+        <div class="back-face"></div>
+    </div>
+    
+    <div class="memory-card" data-framework="objeto">
+        <div class="front-face">Objeto</div>
+        <div class="back-face"></div>
+    </div>
+    <div class="memory-card" data-framework="objeto">
+        <div class="front-face">É uma instância de uma classe </div>
+        <div class="back-face"></div>
+    </div>
+    
+    <div class="memory-card" data-framework="método">
+        <div class="front-face">Método</div>
+        <div class="back-face"></div>
+    </div>
+    <div class="memory-card" data-framework="método">
+        <div class="front-face">É uma função definida dentro de uma classe</div>
+        <div class="back-face"></div>
+    </div>
+    
+    <div class="memory-card" data-framework="atributo">
+        <div class="front-face">Atributo</div>
+        <div class="back-face"></div>
+    </div>
+    <div class="memory-card" data-framework="atributo">
+        <div class="front-face">É uma variável definida dentro de uma classe</div>
+        <div class="back-face"></div>
+    </div>
+    
+    <div class="memory-card" data-framework="construtor">
+        <div class="front-face">Construtor</div>
+        <div class="back-face"></div>
+    </div>
+    <div class="memory-card" data-framework="construtor">
+        <div class="front-face">É um método especial usado para inicializar objetos </div>
+        <div class="back-face"></div>
+    </div>
+    
+    <div class="memory-card" data-framework="herança">
+        <div class="front-face">Herança</div>
+        <div class="back-face"></div>
+    </div>
+    <div class="memory-card" data-framework="herança">
+        <div class="front-face">Permite que uma classe adquira propriedades de outra classe</div>
+        <div class="back-face"></div>
+    </div>
+    
+    <div class="memory-card" data-framework="polimorfismo">
+        <div class="front-face">Polimorfismo</div>
+        <div class="back-face"></div>
+    </div>
+    <div class="memory-card" data-framework="polimorfismo">
+        <div class="front-face">Permite que objetos sejam tratados como instâncias de sua classe pai</div>
+        <div class="back-face"></div>
+    </div>
+    
+    <div class="memory-card" data-framework="interface">
+        <div class="front-face">Interface</div>
+        <div class="back-face"></div>
+    </div>
+    <div class="memory-card" data-framework="interface">
+        <div class="front-face">É um contrato que define métodos que uma classe deve implementar</div>
+        <div class="back-face"></div>
+    </div>
+</div>
+
+<button id="new-game">Reiniciar</button>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    background-color: #f0f0f0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.title {
+    font-size: 4rem;
+    color: #000000;
+    margin-bottom: 35px; 
+}
+
+.subtitle {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.memory-game {
+    display: flex;
+    flex-wrap: wrap;
+    width: 640px;
+    height: 480px;
+    perspective: 1000px;
+    margin-bottom: 20px;
+}
+
+.memory-card {
+    width: calc(25% - 20px);
+    height: calc(33.33% - 20px);
+    margin: 10px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+.memory-card.flip {
+    transform: rotateY(0deg);
+}
+
+.front-face, .back-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    backface-visibility: hidden;
+}
+
+.front-face {
+    background-color: #ff0000fa;
+    color: white;
+}
+
+.back-face {
+    background-color: #3498db;
+    transform: rotateY(180deg);
+}
+
+.memory-card.match .front-face {
+    background-color: #2ecc71;
+}
+
+#new-game {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 190px; 
+}
+
+#new-game:hover {
+    background-color: #45a049;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.player {
+    text-align: center;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif
+
+}
